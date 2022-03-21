@@ -12,6 +12,10 @@ $password = 'password';
 $db = new PDO($dsn, $username, $password);
 $allPlanets = PlanetHydrator::getPlanets($db);
 
+session_start();
+
+// on click $_SESSION['object'] = $object;
+// pass object name via get / href
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +26,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 </head>
 <body>
 <header>
-
+    <h1>Planet Plinky Plonk</h1>
 </header>
 <main>
     <?php
