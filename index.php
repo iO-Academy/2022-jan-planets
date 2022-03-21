@@ -22,7 +22,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 </head>
 <body>
 <header>
-
+    <h1>Planet Plinky Plonk</h1>
 </header>
 <main>
     <?php
