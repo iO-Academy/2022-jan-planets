@@ -24,6 +24,17 @@ main #sun-image {
   filter: drop-shadow(0 0 50px #ef5f02);
   animation: glow-animation 2s linear infinite;
 }
+@keyframes glow-animation {
+  0% {
+    filter: drop-shadow(0 0 50px #ef5f02);
+  }
+  50% {
+    filter: drop-shadow(0 0 50px #c31b02);
+  }
+  100% {
+    filter: drop-shadow(0 0 50px #ef5f02);
+  }
+}
 main .planet-card {
   width: 90%;
   height: auto;
@@ -49,18 +60,6 @@ main .planet-card .planet-card-info-container h2 {
 main .planet-card .planet-card-info-container h3 {
   font-size: 3rem;
   margin: 0;
-}
-
-@keyframes glow-animation {
-  0% {
-    filter: drop-shadow(0 0 50px #ef5f02);
-  }
-  50% {
-    filter: drop-shadow(0 0 50px #c31b02);
-  }
-  100% {
-    filter: drop-shadow(0 0 50px #ef5f02);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
