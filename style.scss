@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    display: none;
+  display: none;
 }
 
 main {
@@ -18,58 +18,56 @@ main {
   gap: 50px;
   padding: 20px;
 
-    #title-image {
-      padding-top: 50px;
-      width: 100%;
-    }
+  #title-image {
+    padding-top: 50px;
+    width: 100%;
+  }
 
-    #sun-image {
+  #sun-image {
+    filter: drop-shadow(0 0 50px #ef5f02);
+    animation: glow-animation 2s linear infinite;
+  }
+
+  @keyframes glow-animation {
+    0% {
       filter: drop-shadow(0 0 50px #ef5f02);
-      animation: glow-animation 2s linear infinite;
     }
-
-    @keyframes glow-animation {
-      0% {
-        filter: drop-shadow(0 0 50px #ef5f02);
-      }
-      50% {
-        filter: drop-shadow(0 0 50px #c31b02);
-      }
-      100% {
-        filter: drop-shadow(0 0 50px #ef5f02);
-      }
+    50% {
+      filter: drop-shadow(0 0 50px #c31b02);
     }
+    100% {
+      filter: drop-shadow(0 0 50px #ef5f02);
+    }
+  }
 
-    .planet-card {
-      width: 90%;
-      height: auto;
+  .planet-card {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+    .planet-card-info-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 30px;
-      border: 2px white dashed;
-      border-radius: 10px;
 
-        .planet-card-info-container {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          img {
-            width: 80vw;
-          }
-
-          h2 {
-            font-size: 5rem;
-            margin: 0;
-          }
-
-          h3 {
-            font-size: 3rem;
-            margin: 0;
-          }
-        }
+      img {
+        width: 80vw;
       }
+
+      h2 {
+        font-size: 5rem;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: 3rem;
+        margin: 0;
+      }
+    }
+  }
 }
 
 
