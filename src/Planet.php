@@ -25,6 +25,7 @@ class Planet
         <div class="planet-card">
             <img src="'.$this->image_src.'">
             <div class="planet-card-info-container">
+                <img src="earth.png" alt="Earth"/>
                 <h2>'.$this->name.'</h2>
                 <h3>'.$this->type.'</h3>
             </div>

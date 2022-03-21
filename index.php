@@ -20,16 +20,19 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 <head>
     <title>Planet Plinky Plonk</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Planet Plinky Plonk</h1>
-    <svg>SUN*****</svg>
-</header>
 <main>
+    <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
+    <svg width="500" height="500">
+        <circle class="sun-svg" r="200" cx="250" cy="250" stroke="yellow" stroke-width="2" fill="yellow" />
+    </svg>
+
+    <h1>Planet Plinky Plonk</h1>
     <?php
     foreach ($allPlanets as $planet){
         echo $planet->createCardHtml();
