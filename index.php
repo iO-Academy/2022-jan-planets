@@ -1,3 +1,19 @@
+<?php
+
+use planetApp\PlanetHydrator;
+
+require 'vendor/autoload.php';
+
+$dsn = 'mysql:host=127.0.0.1:3306; dbname=planet_collection';
+$dbName = 'planet_collection';
+$username = 'root';
+$password = 'password';
+
+$db = new PDO($dsn, $username, $password);
+$allPlanets = PlanetHydrator::getPlanets($db);
+
+?>
+
 <!DOCTYPE html>
 
 <html lang="en-GB">
@@ -14,19 +30,12 @@
     <svg>SUN*****</svg>
 </header>
 <main>
-    <div class="planet-card-container">
-            <div class="planet-card">
-                <img src="earth.png" alt="Earth"/>
-                <div class="planet-card-info-container">
-                    <h2>Earth</h2>
-                    <h3>Planet Type: Earth</h3>
-                </div>
-            </div>
-    </div>
-
+    <?php
+    foreach ($allPlanets as $planet){
+        echo $planet->createCardHtml();
+    }
+    ?>
 </main>
 </body>
 </html>
-
-
 
