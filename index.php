@@ -1,8 +1,7 @@
 <?php
+require 'vendor/autoload.php';
 
 use PlanetApp\PlanetHydrator;
-
-require 'vendor/autoload.php';
 
 $dsn = 'mysql:host=127.0.0.1:3306; dbname=planet_collection';
 $dbName = 'planet_collection';
@@ -11,11 +10,6 @@ $password = 'password';
 
 $db = new PDO($dsn, $username, $password);
 $allPlanets = PlanetHydrator::getPlanets($db);
-
-session_start();
-
-// on click $_SESSION['object'] = $object;
-// pass object name via get / href
 ?>
 
 <!DOCTYPE html>
