@@ -1,6 +1,6 @@
 <?php
 
-use planetApp\PlanetHydrator;
+use PlanetApp\PlanetHydrator;
 
 require 'vendor/autoload.php';
 

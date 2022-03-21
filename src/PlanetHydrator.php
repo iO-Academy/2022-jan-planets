@@ -1,5 +1,5 @@
 <?php
-namespace planetApp;
+namespace PlanetApp;
 
 class PlanetHydrator
 {
