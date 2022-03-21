@@ -27,8 +27,8 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 </head>
 <body>
 <main>
-    <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
-    <svg width="500" height="500">
+    <img class="title" id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
+    <svg class="sun" width="500" height="500">
         <circle class="sun-svg" r="200" cx="250" cy="250" stroke="yellow" stroke-width="2" fill="yellow" />
     </svg>
 
