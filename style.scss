@@ -13,12 +13,55 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
+  padding: 20px;
 
-  #title-image {
-    width: 100%;
+    #title-image {
+      padding-top: 50px;
+      width: 100%;
+    }
+    #sun-image {
+      filter: drop-shadow(0 0 50px #ef5f02);
+      animation: glow-animation 2s linear infinite;
+    }
+    .planet-card {
+      width: 90%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      border: 2px white dashed;
+      border-radius: 10px;
+        .planet-card-info-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 80vw;
+          }
+          h2 {
+            font-size: 5rem;
+            margin: 0;
+          }
+          h3 {
+            font-size: 3rem;
+            margin: 0;
+          }
+        }
+
+      }
+}
+
+@keyframes glow-animation {
+  0% {
+    filter: drop-shadow(0 0 50px #ef5f02);
   }
-  svg {
-    filter: drop-shadow(0 0 15px yellow);
+  50% {
+    filter: drop-shadow(0 0 50px #c31b02);
+  }
+  100% {
+    filter: drop-shadow(0 0 50px #ef5f02);
   }
 }
 
