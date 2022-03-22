@@ -3,7 +3,7 @@ require 'vendor/autoload.php';
 
 use PlanetApp\PlanetHydrator;
 
-$dsn = 'mysql:host=127.0.0.1:3306; dbname=planet_collection';
+$dsn = 'mysql:host=db; dbname=planet_collection';
 $dbName = 'planet_collection';
 $username = 'root';
 $password = 'password';

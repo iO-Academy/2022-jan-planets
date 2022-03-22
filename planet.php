@@ -1,20 +1,23 @@
 <?php
 require 'vendor/autoload.php';
-// redirect if SQL query fails
+
 include 'src/Planet.php';
 use PlanetApp\PlanetHydrator;
 
-$dsn = 'mysql:host=127.0.0.1:3306; dbname=planet_collection';
+$dsn = 'mysql:host=db; dbname=planet_collection';
 $dbName = 'planet_collection';
 $username = 'root';
 $password = 'password';
 
+
+
+if(!isset($_GET['planetId'])){header('Location: ./index.php');}
+
 $db = new PDO($dsn, $username, $password);
-
 $planetId = $_GET['planetId'];
-
-
 $planet = PlanetHydrator::getPlanet($db, $planetId);
+
+
 
 ?>
 
@@ -26,15 +29,14 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
 </head>
 <body>
 <nav>
-    <a href="/index.php#<?=$planetId?>"><button type="button"><</button></a>
+    <a href="./index.php#<?=$planetId?>"><button type="button"><</button></a>
 </nav>
 <header>
 <h1><?=$planet->getName()?></h1>
 </header>
 <main>
-    returning null - stopping flow?
     <img src="<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
-    <h2><?=$planet->getFullName()?></h2>
+    <?= ($planet->getFullName() !== null) ?? '<h2>Full Name:'.$planet->getFullName().'</h2>'; ?>
     <p>
         <?=$planet->getDescription()?>
     </p>
