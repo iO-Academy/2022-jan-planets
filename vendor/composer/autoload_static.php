@@ -7,14 +7,14 @@ namespace Composer\Autoload;
 class ComposerStaticInit288ad2b19ea4e9f2ac39ba9b416e4e3c
 {
     public static $prefixLengthsPsr4 = array (
-        'p' => 
+        'P' => 
         array (
-            'planetApp\\' => 10,
+            'PlanetApp\\' => 10,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'planetApp\\' => 
+        'PlanetApp\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -22,6 +22,7 @@ class ComposerStaticInit288ad2b19ea4e9f2ac39ba9b416e4e3c
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'PlanetApp\\Planet' => __DIR__ . '/../..' . '/src/Planet.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

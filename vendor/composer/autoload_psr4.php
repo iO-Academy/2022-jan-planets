@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'planetApp\\' => array($baseDir . '/src'),
+    'PlanetApp\\' => array($baseDir . '/src'),
 );

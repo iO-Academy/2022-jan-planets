@@ -1,7 +1,6 @@
 <?php
-
-use planetApp\PlanetHydrator;
-use planetApp\OrbitSvg;
+use PlanetApp\PlanetHydrator;
+use PlanetApp\OrbitSvg;
 
 require 'vendor/autoload.php';
 
