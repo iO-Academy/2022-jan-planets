@@ -62,9 +62,28 @@ main .planet-card .planet-card-info-container h3 {
 }
 
 @media screen and (min-width: 600px) {
+  body {
+    background-image: url("cosmos-1853491_1920.jpg");
+  }
+
   .planet-card-container {
     display: none;
     border: white solid 1px;
+  }
+
+  .title-image-container {
+    position: absolute;
+    width: 95%;
+    z-index: 1;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .title-image-container #title-image {
+    padding: 0;
+    width: 700px;
   }
 
   .mobile {
@@ -108,6 +127,9 @@ main .planet-card .planet-card-info-container h3 {
   .solar-system-container #haumea {
     fill: #808080;
   }
+  .solar-system-container .haumea-ring {
+    stroke: #808080;
+  }
   .solar-system-container #pluto {
     fill: #ffffff;
   }
@@ -122,6 +144,12 @@ main .planet-card .planet-card-info-container h3 {
   }
   .solar-system-container #saturn {
     fill: #fac711;
+  }
+  .solar-system-container .saturn-ring {
+    stroke: #fac711;
+  }
+  .solar-system-container .saturn {
+    transform: rotate(45deg);
   }
   .solar-system-container #jupiter {
     fill: #aa5f90;

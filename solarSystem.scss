@@ -1,7 +1,26 @@
 @media screen and (min-width: 600px) {
+  body {
+    background-image: url("cosmos-1853491_1920.jpg");
+  }
+
   .planet-card-container {
     display: none;
     border: white solid 1px;
+  }
+
+  .title-image-container {
+    position: absolute;
+    width: 95%;
+    z-index: 1;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    #title-image {
+      padding: 0;
+      width: 700px;
+    }
   }
 
   .mobile {
@@ -55,8 +74,9 @@
     #haumea {
       fill: #808080;
 
-
-    }
+    }.haumea-ring {
+       stroke: #808080;
+     }
     #pluto {
       fill: #ffffff;
 
@@ -78,6 +98,15 @@
     #saturn {
       fill: #fac711;
 
+    }
+
+    .saturn-ring {
+      stroke: #fac711;
+    }
+
+    .saturn {
+      transform: rotate(45deg);
+      //top: 50%;
     }
 
     #jupiter {
@@ -107,6 +136,7 @@
       fill: #b4badf;
 
     }
+
   }
 
 }
