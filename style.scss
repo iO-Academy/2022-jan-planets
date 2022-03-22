@@ -1,4 +1,4 @@
-@import "solarSystem.scss";
+
 
 body {
   font-family: 'Archivo Black', sans-serif;
@@ -23,7 +23,7 @@ main {
     width: 100%;
   }
 
-  #sun-image {
+  .sun-image {
     filter: drop-shadow(0 0 50px #ef5f02);
     animation: glow-animation 2s linear infinite;
   }
@@ -69,6 +69,6 @@ main {
     }
   }
 }
-
+@import "solarSystem.scss";
 
 
