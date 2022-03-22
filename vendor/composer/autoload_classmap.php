@@ -8,4 +8,5 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'PlanetApp\\Planet' => $baseDir . '/src/Planet.php',
+    'PlanetApp\\PlanetHydrator' => $baseDir . '/src/PlanetHydrator.php',
 );

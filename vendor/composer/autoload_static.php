@@ -23,6 +23,7 @@ class ComposerStaticInit288ad2b19ea4e9f2ac39ba9b416e4e3c
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'PlanetApp\\Planet' => __DIR__ . '/../..' . '/src/Planet.php',
+        'PlanetApp\\PlanetHydrator' => __DIR__ . '/../..' . '/src/PlanetHydrator.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
