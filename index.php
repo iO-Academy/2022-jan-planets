@@ -20,6 +20,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 <html lang="en-GB">
 <head>
     <title>Planet Plinky Plonk</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,6 +57,13 @@ $allPlanets = PlanetHydrator::getPlanets($db);
         <?= OrbitSvg::generateOrbitSvg('14', '64', 'earth', '2'); ?>
         <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
         <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
+        <svg id="earth" width="30px" height="30px">
+            <circle class="planet-svg" id="earth" r="15" cx="50%" cy="50%" stroke="none" stroke-width="1"></circle>' .
+        </svg>
+        <svg id="mars" width="30px" height="30px">
+            <circle class="planet-svg" id="earth" r="15" cx="50%" cy="50%" stroke="none" stroke-width="1"></circle>' .
+        </svg>
+
     </div>
     <?php
     foreach ($allPlanets as $planet){

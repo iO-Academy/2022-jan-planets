@@ -26,7 +26,7 @@ class Planet
     public function createCardHtml(): string
     {
         return('
-        <div class="planet-card">
+        <div id="'. $this->name .'" class="planet-card hidden-on-desktop shown-on-desktop">
             <img src="'.$this->image_src.'">
             <img src="earth.png" alt="Earth"/>
             <div class="planet-card-info-container">

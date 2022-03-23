@@ -75,7 +75,7 @@ main .sun-image {
     background-image: url("cosmos-1853491_1920.jpg");
   }
 
-  .planet-card {
+  .hidden-on-desktop {
     display: none;
   }
 
@@ -168,15 +168,27 @@ main .sun-image {
   }
   .solar-system-container #mars {
     fill: #f45642;
+    position: relative;
+    top: 50%;
+    left: 80%;
   }
   .solar-system-container #earth {
+    position: relative;
     fill: #2d9bf0;
+    top: 50%;
+    left: 70%;
   }
   .solar-system-container #venus {
     fill: #e6e6e6;
   }
   .solar-system-container #mercury {
     fill: #b4badf;
+  }
+
+  .shown-on-desktop {
+    position: absolute;
+    top: 80%;
+    height: 500px;
   }
 }
 

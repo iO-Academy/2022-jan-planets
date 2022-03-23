@@ -7,7 +7,7 @@
     background-image: url("cosmos-1853491_1920.jpg");
   }
 
-  .planet-card {
+  .hidden-on-desktop {
     display: none;
   }
 
@@ -119,10 +119,16 @@
 
     #mars {
       fill: #f45642;
+      position: relative;
+      top: 50%;
+      left: 80%
     }
 
     #earth {
+      position: relative;
       fill: #2d9bf0;
+      top: 50%;
+      left: 70%;
     }
 
     #venus {
@@ -132,5 +138,10 @@
     #mercury {
       fill: #b4badf;
     }
+  }
+  .shown-on-desktop {
+    position: absolute;
+    top: 80%;
+    height: 500px;
   }
 }
