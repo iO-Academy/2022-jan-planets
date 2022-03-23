@@ -61,6 +61,10 @@ main .planet-card .planet-card-info-container h3 {
   margin: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   body {
     background-image: url("cosmos-1853491_1920.jpg");
@@ -68,7 +72,10 @@ main .planet-card .planet-card-info-container h3 {
 
   .planet-card-container {
     display: none;
-    border: white solid 1px;
+  }
+
+  .planet-card {
+    display: none;
   }
 
   .title-image-container {
