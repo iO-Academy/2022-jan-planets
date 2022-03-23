@@ -8,6 +8,7 @@ body {
 h1 {
   display: none;
 }
+
 h2 {
   font-size: 3rem;
   margin: 0;
@@ -47,9 +48,8 @@ main {
       filter: drop-shadow(0 0 50px #ef5f02);
     }
   }
-
-
 }
+
 .planet-card {
   width: 90%;
   height: auto;
@@ -68,6 +68,7 @@ main {
     align-items: center;
   }
 }
+
 @media screen and (min-width: 600px) {
   .planets-container {
     display: flex;

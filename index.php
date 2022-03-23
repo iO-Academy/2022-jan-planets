@@ -1,4 +1,5 @@
 <?php
+
 use PlanetApp\PlanetHydrator;
 
 require 'vendor/autoload.php';
@@ -28,14 +29,14 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 </header>
 <main>
     <div class="title-image-container">
-    <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
+        <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
     </div>
     <img class="sun-image mobile" src="sun.png" alt="Sun"/>
 
     <h1>Planet Plinky Plonk</h1>
     <div class="planets-container">
         <?php
-        foreach ($allPlanets as $planet){
+        foreach ($allPlanets as $planet) {
             echo $planet->createCardHtml();
         }
         ?>

@@ -4,8 +4,6 @@ namespace PlanetApp\Test;
 use PHPUnit\Framework\TestCase;
 use PlanetApp\Planet;
 
-//require __DIR__ . '/../Planet.php';
-
 class PlanetTest extends TestCase
 {
     public function testSuccessCreateCardHtml()
