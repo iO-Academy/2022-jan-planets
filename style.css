@@ -9,6 +9,16 @@ h1 {
   display: none;
 }
 
+h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -46,137 +56,37 @@ main .sun-image {
   padding: 30px;
 }
 .planet-card img {
-  width: 75vw;
+  width: 100%;
 }
 .planet-card .planet-card-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.planet-card .planet-card-info-container h2 {
-  font-size: 5rem;
-  margin: 0;
-}
-.planet-card .planet-card-info-container h3 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.hidden {
-  display: none;
-}
-
-.solar-system-container {
-  display: none;
-}
 
 @media screen and (min-width: 600px) {
-  body {
-    background-image: url("cosmos-1853491_1920.jpg");
+  .planets-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .sun-image {
+    max-width: 350px;
   }
 
   .planet-card {
-    display: none;
-  }
-
-  .title-image-container {
-    position: absolute;
-    width: 95%;
-    z-index: 1;
-    border: #ffffff solid 2px;
-    border-radius: 20px;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .title-image-container #title-image {
-    padding: 0;
-    width: 50%;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .solar-system-container {
-    display: block;
-    width: 100%;
-    height: 95vh;
-    position: relative;
-  }
-  .solar-system-container .orbit-svg {
-    position: absolute;
-  }
-  .solar-system-container .orbit {
-    stroke: #595858;
-  }
-  .solar-system-container .desktop {
-    width: 12%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: 1;
-  }
-  .solar-system-container #senda {
-    fill: #e6e6e6;
-  }
-  .solar-system-container #eris {
-    fill: #6e2e2e;
-  }
-  .solar-system-container #gonggong {
-    fill: #956986;
-  }
-  .solar-system-container #makemake {
-    fill: #6e2e2e;
-  }
-  .solar-system-container #quaoar {
-    fill: #573232;
-  }
-  .solar-system-container #haumea {
-    fill: #808080;
-  }
-  .solar-system-container .haumea-ring {
-    stroke: #808080;
-  }
-  .solar-system-container #pluto {
-    fill: #ffffff;
-  }
-  .solar-system-container #orcus {
-    fill: #424242;
-  }
-  .solar-system-container #neptune {
-    fill: #414bb2;
-  }
-  .solar-system-container #uranus {
-    fill: #ace5e8;
-  }
-  .solar-system-container #saturn {
-    fill: #fac711;
-  }
-  .solar-system-container .saturn-ring {
-    stroke: #fac711;
-  }
-  .solar-system-container .saturn {
-    transform: rotate(45deg);
-  }
-  .solar-system-container #jupiter {
-    fill: #aa5f90;
-  }
-  .solar-system-container #ceres {
-    fill: #808080;
-  }
-  .solar-system-container #mars {
-    fill: #f45642;
-  }
-  .solar-system-container #earth {
-    fill: #2d9bf0;
-  }
-  .solar-system-container #venus {
-    fill: #e6e6e6;
-  }
-  .solar-system-container #mercury {
-    fill: #b4badf;
+    max-width: 200px;
   }
 }
 

@@ -1,6 +1,4 @@
 <?php
-
-use PlanetApp\OrbitSvg;
 use PlanetApp\PlanetHydrator;
 
 require 'vendor/autoload.php';
@@ -14,9 +12,7 @@ $db = new PDO($dsn, $username, $password);
 $allPlanets = PlanetHydrator::getPlanets($db);
 
 ?>
-
 <!DOCTYPE html>
-
 <html lang="en-GB">
 <head>
     <title>Planet Plinky Plonk</title>
@@ -37,31 +33,14 @@ $allPlanets = PlanetHydrator::getPlanets($db);
     <img class="sun-image mobile" src="sun.png" alt="Sun"/>
 
     <h1>Planet Plinky Plonk</h1>
-    <div class="solar-system-container">
-        <img class="sun-image desktop" src="sun.png" alt="Sun"/>
-        <?= OrbitSvg::generateOrbitSvg('48', '98', 'senda', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('46', '4', 'eris', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('44', '94', 'gonggong', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('42', '8', 'makemake', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('38', '88', 'quaoar', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('36', '12', 'haumea', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('34', '84', 'pluto', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('32', '16', 'orcus', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('30', '80', 'neptune', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('28', '20', 'uranus', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('25', '75', 'saturn', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('22', '28', 'jupiter', '4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('18', '68', 'ceres', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('16', '34', 'mars', '1.6'); ?>
-        <?= OrbitSvg::generateOrbitSvg('14', '64', 'earth', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
+    <div class="planets-container">
+        <?php
+        foreach ($allPlanets as $planet){
+            echo $planet->createCardHtml();
+        }
+        ?>
     </div>
-    <?php
-    foreach ($allPlanets as $planet){
-        echo $planet->createCardHtml();
-    }
-    ?>
+
 </main>
 </body>
 </html>
