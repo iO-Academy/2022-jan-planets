@@ -36,9 +36,9 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
     <div class="planet-image-section">
         <img src="./images/<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
         <p class="image-source-text">Source: <?=$planet->getImageDescription()?></p>
-        <?php if($planet->getFullName() != null) {echo '<h2>Full Name: '.$planet->getFullName().'</h2>';}?>
     </div>
     <div class="planet-details-section">
+        <?php if($planet->getFullName() != null) {echo '<h2>Full Name: '.$planet->getFullName().'</h2>';}?>
         <p class="planet-description-text">
             <?=$planet->getDescription()?>
         </p>
