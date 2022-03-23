@@ -1,11 +1,11 @@
 <?php
 
-use planetApp\PlanetHydrator;
-use planetApp\OrbitSvg;
+use PlanetApp\OrbitSvg;
+use PlanetApp\PlanetHydrator;
 
 require 'vendor/autoload.php';
 
-$dsn = 'mysql:host=127.0.0.1:3306; dbname=planet_collection';
+$dsn = 'mysql:host=db; dbname=planet_collection';
 $dbName = 'planet_collection';
 $username = 'root';
 $password = 'password';
@@ -27,6 +27,9 @@ $allPlanets = PlanetHydrator::getPlanets($db);
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <h1>Planet Plinky Plonk</h1>
+</header>
 <main>
     <div class="title-image-container">
     <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
@@ -36,23 +39,23 @@ $allPlanets = PlanetHydrator::getPlanets($db);
     <h1>Planet Plinky Plonk</h1>
     <div class="solar-system-container">
         <img class="sun-image desktop" src="sun.png" alt="Sun"/>
-        <?= OrbitSvg::generateOrbitSvg('48%', '98%', 'senda', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('46%', '4%', 'eris', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('44%', '94%', 'gonggong', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('42%', '8%', 'makemake', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('38%', '88%', 'quaoar', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('36%', '12%', 'haumea', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('34%', '84%', 'pluto', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('32%', '16%', 'orcus', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('30%', '80%', 'neptune', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('28%', '20%', 'uranus', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('25%', '75%', 'saturn', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('22%', '28%', 'jupiter', '4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('18%', '68%', 'ceres', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('16%', '34%', 'mars', '1.6'); ?>
-        <?= OrbitSvg::generateOrbitSvg('14%', '64%', 'earth', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('12%', '38%', 'venus', '1.4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('10%', '60%', 'mercury', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('48', '98', 'senda', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('46', '4', 'eris', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('44', '94', 'gonggong', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('42', '8', 'makemake', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('38', '88', 'quaoar', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('36', '12', 'haumea', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('34', '84', 'pluto', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('32', '16', 'orcus', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('30', '80', 'neptune', '2'); ?>
+        <?= OrbitSvg::generateOrbitSvg('28', '20', 'uranus', '2'); ?>
+        <?= OrbitSvg::generateOrbitSvg('25', '75', 'saturn', '2'); ?>
+        <?= OrbitSvg::generateOrbitSvg('22', '28', 'jupiter', '4'); ?>
+        <?= OrbitSvg::generateOrbitSvg('18', '68', 'ceres', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('16', '34', 'mars', '1.6'); ?>
+        <?= OrbitSvg::generateOrbitSvg('14', '64', 'earth', '2'); ?>
+        <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
+        <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
     </div>
     <div class="planet-card-container">
     <?php

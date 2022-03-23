@@ -1,25 +1,29 @@
 <?php
 
-namespace planetApp;
+namespace PlanetApp;
 
 class Planet
 {
-    protected $id;
     protected $name;
     protected $image_src;
-    protected $sun;
     protected $type;
-    protected $length_of_day;
-    protected $length_of_year;
-    protected $mean_radius_km;
-    protected $mass_earths;
-    protected $mean_distance_from_sun_au;
-    protected $number_of_moons;
-    protected $mean_surface_temperature_c;
-    protected $full_name;
-    protected $description;
 
-    public function createCardHtml()
+    public function setName(string $name): void
+    {
+        $this->name = $name;
+    }
+
+    public function setImageSrc(string $image_src): void
+    {
+        $this->image_src = $image_src;
+    }
+
+    public function setType(string $type): void
+    {
+        $this->type = $type;
+    }
+
+    public function createCardHtml(): string
     {
         return('
         <div class="planet-card">
