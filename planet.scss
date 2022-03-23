@@ -5,26 +5,10 @@ body {
   font-size: 10px
 }
 h1 {
+  margin: 20px;
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
-}
-
-nav {
-  button {
-    background-color: #000000;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1.2rem;
-    border: solid 1px #ffffff;
-    padding: 10px 20px;
-    margin: 5px;
-    transition: 0.3s;
-    &:hover {
-      background-color: #ffffff;
-      color: #000000;
-    }
-  }
 }
 
 main {
@@ -33,9 +17,34 @@ main {
   align-items: center;
   font-size: 1.5rem;
   margin: 15px;
+
+  button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: solid 1px #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+  .desktop-button-text {
+    display: none;
+  }
+
+
   img {
     width: 100%;
   }
+
   .image-source-text {
     width: 100%;
     font-size: 1rem;
@@ -59,4 +68,25 @@ main {
     font-weight: 600;
     color: #E875AB;
   }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .desktop-button-text {
+      display: inline;
+    }
+  }
+
+  h1 {
+    grid-column: 2;
+  }
+  .planet-image-section {
+    grid-column: 1;
+  }
+  .planet-details-section {
+    grid-column: 2;
+  }
+
 }
