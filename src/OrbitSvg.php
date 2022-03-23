@@ -6,10 +6,8 @@ use PHPUnit\Exception;
 
 class OrbitSvg
 {
-
     public static function generateOrbitSvg(float $orbitRadius, float $planetPosition, string $planetName, float $planetRadius): string
     {
-
 
         if($orbitRadius < 0 || $orbitRadius > 100 || $planetRadius < 0 || $planetRadius > 100 || $planetPosition < 0 || $planetPosition > 100) {
             throw new \Exception('coordinates must be between 0 and 100');
@@ -44,6 +42,5 @@ class OrbitSvg
                     '</svg>';
             }
         }
-
     }
 }
