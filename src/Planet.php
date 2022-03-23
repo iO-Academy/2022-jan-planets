@@ -63,13 +63,18 @@ class Planet
     {
         return ($this->mean_surface_temperature_c === null) ? 'unknown' : $this->mean_surface_temperature_c;
     }
-    public function getFullName(): string
+    public function getFullName(): ?string
     {
-        return $this->full_name === null;
+        return $this->full_name;
     }
     public function getDescription(): string
     {
         return ($this->description === null) ? 'unknown' : $this->description;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
     }
 
     public function setName(string $name): void
