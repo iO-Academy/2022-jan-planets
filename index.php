@@ -57,13 +57,11 @@ $allPlanets = PlanetHydrator::getPlanets($db);
         <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
         <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
     </div>
-    <div class="planet-card-container">
     <?php
     foreach ($allPlanets as $planet){
         echo $planet->createCardHtml();
     }
     ?>
-    </div>
 </main>
 </body>
 </html>
