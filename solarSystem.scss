@@ -1,0 +1,136 @@
+.solar-system-container {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url("cosmos-1853491_1920.jpg");
+  }
+
+  .planet-card {
+    display: none;
+  }
+
+  .title-image-container {
+    position: absolute;
+    width: 95%;
+    z-index: 1;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    #title-image {
+      padding: 0;
+      width: 50%;
+    }
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .solar-system-container {
+    display: block;
+    width: 100%;
+    height: 95vh;
+    position: relative;
+
+    .orbit-svg {
+      position: absolute;
+    }
+
+    .orbit {
+      stroke: #595858;
+    }
+
+    .desktop {
+      width: 12%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      z-index: 1;
+    }
+
+    #senda {
+      fill: #e6e6e6;
+    }
+
+    #eris {
+      fill: #6e2e2e;
+    }
+
+    #gonggong {
+      fill: #956986;
+    }
+
+    #makemake {
+      fill: #6e2e2e;
+    }
+
+    #quaoar {
+      fill: #573232;
+    }
+
+    #haumea {
+      fill: #808080;
+    }
+
+    .haumea-ring {
+      stroke: #808080;
+    }
+
+    #pluto {
+      fill: #ffffff;
+    }
+
+    #orcus {
+      fill: #424242;
+    }
+
+    #neptune {
+      fill: #414bb2;
+    }
+
+    #uranus {
+      fill: #ace5e8;
+    }
+
+    #saturn {
+      fill: #fac711;
+    }
+
+    .saturn-ring {
+      stroke: #fac711;
+    }
+
+    .saturn {
+      transform: rotate(45deg);
+    }
+
+    #jupiter {
+      fill: #aa5f90;
+    }
+
+    #ceres {
+      fill: #808080;
+    }
+
+    #mars {
+      fill: #f45642;
+    }
+
+    #earth {
+      fill: #2d9bf0;
+    }
+
+    #venus {
+      fill: #e6e6e6;
+    }
+
+    #mercury {
+      fill: #b4badf;
+    }
+  }
+}
