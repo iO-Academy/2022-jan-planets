@@ -36,7 +36,8 @@ main .sun-image {
     filter: drop-shadow(0 0 50px #ef5f02);
   }
 }
-main .planet-card {
+
+.planet-card {
   width: 90%;
   height: auto;
   display: flex;
@@ -44,19 +45,19 @@ main .planet-card {
   align-items: center;
   padding: 30px;
 }
-main .planet-card img {
+.planet-card img {
   width: 75vw;
 }
-main .planet-card .planet-card-info-container {
+.planet-card .planet-card-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .planet-card .planet-card-info-container h2 {
+.planet-card .planet-card-info-container h2 {
   font-size: 5rem;
   margin: 0;
 }
-main .planet-card .planet-card-info-container h3 {
+.planet-card .planet-card-info-container h3 {
   font-size: 3rem;
   margin: 0;
 }
@@ -65,13 +66,13 @@ main .planet-card .planet-card-info-container h3 {
   display: none;
 }
 
+.solar-system-container {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   body {
     background-image: url("cosmos-1853491_1920.jpg");
-  }
-
-  .planet-card-container {
-    display: none;
   }
 
   .planet-card {
@@ -98,6 +99,7 @@ main .planet-card .planet-card-info-container h3 {
   }
 
   .solar-system-container {
+    display: block;
     width: 100%;
     height: 95vh;
     position: relative;

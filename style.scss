@@ -41,32 +41,33 @@ main {
     }
   }
 
-  .planet-card {
-    width: 90%;
-    height: auto;
+
+}
+.planet-card {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+  img {
+    width: 75vw;
+  }
+
+  .planet-card-info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
 
-    img {
-      width: 75vw;
+    h2 {
+      font-size: 5rem;
+      margin: 0;
     }
 
-    .planet-card-info-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      h2 {
-        font-size: 5rem;
-        margin: 0;
-      }
-
-      h3 {
-        font-size: 3rem;
-        margin: 0;
-      }
+    h3 {
+      font-size: 3rem;
+      margin: 0;
     }
   }
 }
