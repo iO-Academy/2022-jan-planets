@@ -23,14 +23,13 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
 <html lang="en-GB">
 <head>
     <title>Planet Plinky Plonk</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="planet.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<nav>
-    <a href="./index.php#planet-<?=$planetId?>"><button type="button"><</button></a>
-</nav>
-<header>
-    <h1><?=$planet->getName()?></h1>
-</header>
 <main>
     <img src="<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
     <?php if($planet->getFullName() != null) {echo '<h2>Full Name: '.$planet->getFullName().'</h2>';}?>

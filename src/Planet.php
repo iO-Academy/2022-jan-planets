@@ -18,6 +18,7 @@ class Planet
     protected ?string $mean_surface_temperature_c;
     protected ?string $full_name;
     protected ?string $description;
+    protected ?string $image_description;
 
     public function getName(): string
     {
@@ -70,6 +71,11 @@ class Planet
     public function getDescription(): string
     {
         return ($this->description === null) ? 'unknown' : $this->description;
+    }
+
+    public function getImageDescription(): string
+    {
+        return ($this->image_description === null) ? 'unknown' : $this->image_description;
     }
 
     public function setId(int $id): void

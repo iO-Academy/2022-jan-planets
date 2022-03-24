@@ -1,0 +1,117 @@
+body {
+  background-image: linear-gradient(to bottom, #00000050, #00000050), url('cosmos-1853491_1920.jpg');
+  font-family: 'Nunito', sans-serif;
+  color: #ffffff;
+  font-size: 10px
+}
+
+h1 {
+  margin: 20px;
+  font-size: 3rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  margin: 15px;
+
+  button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: solid 1px #ffffff;
+    padding: 10px 20px;
+    margin: 5px;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+  }
+
+  .desktop-button-text {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .image-source-text {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .planet-description-text {
+    border-top: solid 2px #7B7B7B;
+    border-bottom: solid 2px #7B7B7B;
+    margin: 0;
+    padding: 30px 0;
+  }
+
+  .details-table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;
+    p {
+      margin: 4px;
+    }
+  }
+
+  .detail-table-heading {
+    font-weight: 600;
+    color: #E875AB;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    .desktop-button-text {
+      display: inline;
+    }
+  }
+
+  .image-source-text {
+    text-align: center;
+  }
+
+  h1 {
+    grid-column: 2;
+    text-align: left;
+    margin: 0;
+  }
+
+  h2 {
+    grid-column: 2;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .planet-image-section {
+    grid-column: 1;
+  }
+
+  .planet-details-section {
+    grid-column: 2;
+  }
+
+}
