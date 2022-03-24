@@ -74,6 +74,7 @@
     .sun-image {
       width: 12%;
       left: 50%;
+      cursor: auto;
     }
 
     .Sedna {
@@ -165,8 +166,8 @@
       position: absolute;
       bottom: 5px;
       left: 20px;
-      width: 15%;
-      height: auto;
+      max-width: 200px;
+      height: 250px;
       border: 2px #ffffff solid;
       border-radius: 10px;
       background-color: #07040599;
@@ -177,7 +178,6 @@
       }
     }
  }
-
 
   h2 {
     font-size: 1.5rem;
