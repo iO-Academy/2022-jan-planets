@@ -20,6 +20,7 @@ class PlanetTest extends TestCase
             <div class="planet-card-info-container">
                 <a href="./planet.php?planetId=1"><h2>Uranus</h2></a>
                 <h3>Ice giant</h3>
+                <a class="learn-more-button" href="./planet.php?planetId=1">Learn more about Uranus</a>
             </div>
         </div>
         ';
