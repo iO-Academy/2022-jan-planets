@@ -30,39 +30,39 @@ class Planet
     }
     public function getSun(): string
     {
-        return $this->sun === null;
+        return $this->sun;
     }
     public function getType(): string
     {
-        return $this->type === null;
+        return $this->type;
     }
     public function getLengthOfDay(): string
     {
-        return $this->length_of_day === null;
+        return $this->length_of_day;
     }
     public function getLengthOfYear(): string
     {
-        return $this->length_of_year === null;
+        return $this->length_of_year;
     }
     public function getMeanRadiusKm(): string
     {
-        return $this->mean_radius_km === null;
+        return $this->mean_radius_km;
     }
     public function getMassEarths(): string
     {
-        return $this->mass_earths === null;
+        return $this->mass_earths;
     }
     public function getMeanDistanceFromSunAu(): string
     {
-        return $this->mean_distance_from_sun_au === null;
+        return $this->mean_distance_from_sun_au;
     }
     public function getNumberOfMoons(): string
     {
-        return $this->number_of_moons === null;
+        return $this->number_of_moons;
     }
     public function getMeanSurfaceTemperatureC(): string
     {
-        return $this->mean_surface_temperature_c === null;
+        return $this->mean_surface_temperature_c;
     }
     public function getFullName(): ?string
     {
@@ -70,12 +70,12 @@ class Planet
     }
     public function getDescription(): string
     {
-        return $this->description === null;
+        return $this->description;
     }
 
     public function getImageDescription(): string
     {
-        return $this->image_description === null;
+        return $this->image_description;
     }
 
     public function setId(int $id): void
