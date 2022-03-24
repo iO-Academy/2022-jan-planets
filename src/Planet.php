@@ -35,5 +35,10 @@ class Planet
         </div>
         ');
     }
-
+    public function displayPlanetImage(): string
+    {
+        return ('
+                <img class="' . $this->name . ' desktop " src="images/' . $this->image_src . '"' . ' alt="' . $this->name . '">
+        ');
+    }
 }

@@ -20,6 +20,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
+
     #title-image {
       padding: 0;
       width: 50%;
@@ -30,10 +31,14 @@
     display: none;
   }
 
+  main {
+    padding: 20px;
+  }
+
   .solar-system-container {
     display: block;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     position: relative;
 
     .orbit-svg {
@@ -45,148 +50,107 @@
     }
 
     .desktop {
-      width: 12%;
       position: absolute;
       top: 50%;
-      left: 50%;
       transform: translateX(-50%) translateY(-50%);
       z-index: 1;
     }
 
-    #sedna {
-      fill: #e6e6e6;
-      position: absolute;
-      top: 50%;
+    .sun-image {
+      width: 12%;
+      left: 50%;
+    }
+
+    .Sedna {
+      width: 5%;
       left: 97%;
     }
 
-    #eris {
-      fill: #6e2e2e;
-      position: absolute;
-      top: 50%;
+    .Eris {
+      width: 5%;
       left: 3%;
     }
 
-    #gonggong {
-      fill: #956986;
-      position: absolute;
-      top: 50%;
+    .Gonggong {
+      width: 5%;
       left: 93%;
     }
 
-    #makemake {
-      fill: #6e2e2e;
-      position: absolute;
-      top: 50%;
+    .Makemake {
+      width: 5%;
       left: 7%;
     }
 
-    #quaoar {
-      fill: #573232;
-      position: absolute;
-      top: 50%;
+    .Quaoar {
+      width: 5%;
       left: 87%;
     }
 
-    #haumea {
-      fill: #808080;
-      position: absolute;
-      top: 50%;
+    .Haumea {
+      width: 5%;
       left: 11.5%;
     }
 
-    .haumea-ring {
-      stroke: #808080;
-      position: relative;
-      top: 50%;
-      left: 98%;
-    }
-
-    #pluto {
-      fill: #ffffff;
-      position: absolute;
-      top: 50%;
+    .Pluto {
+      width: 5%;
       left: 83%;
     }
 
-    #orcus {
-      fill: #424242;
-      position: absolute;
-      top: 50%;
+    .Orcus {
+      width: 5%;
       left: 17%;
     }
 
-    #neptune {
-      fill: #414bb2;
-      position: absolute;
-      top: 50%;
+    .Neptune {
+      width: 5%;
       left: 79%;
     }
 
-    #uranus {
-      fill: #ace5e8;
-      position: absolute;
-      top: 50%;
+    .Uranus {
+      width: 5%;
       left: 21%;
     }
 
-    #saturn {
-      fill: #fac711;
-      position: absolute;
-      top: 50%;
+    .Saturn {
+      width: 5%;
       left: 72%;
     }
 
-    .saturn-ring {
-      stroke: #fac711;
-    }
-
-    #jupiter {
-      fill: #aa5f90;
-      position: absolute;
-      top: 50%;
+    .Jupiter {
+      width: 5%;
       left: 29%;
     }
 
-    #ceres {
-      fill: #808080;
-      position: absolute;
-      top: 50%;
+    .Ceres {
+      width: 5%;
       left: 67%;
     }
 
-    #mars {
-      fill: #f45642;
-      position: absolute;
-      top: 50%;
-      left: 33%
+    .Mars {
+      width: 5%;
+      left: 33%;
     }
 
-    #earth {
-      position: absolute;
-      fill: #2d9bf0;
-      top: 50%;
+    .Earth {
+      width: 5%;
       left: 63%;
     }
 
-    #venus {
-      fill: #e6e6e6;
-      position: absolute;
-      top: 50%;
+    .Venus {
+      width: 5%;
       left: 37%;
     }
 
-    #mercury {
-      fill: #b4badf;
-      position: absolute;
-      top: 50%;
+    .Mercury {
+      width: 5%;
       left: 59%;
     }
-  }
-  .planet-card {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    width: 200px;
+
+    .planet-card {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      width: 200px;
     }
+  }
 }

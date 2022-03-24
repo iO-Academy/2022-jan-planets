@@ -41,42 +41,31 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 
     <div class="solar-system-container">
         <img class="sun-image desktop" src="sun.png" alt="Sun"/>
-        <?= OrbitSvg::generateOrbitSvg('48', '98', 'sedna', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('46', '4', 'eris', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('44', '94', 'gonggong', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('42', '8', 'makemake', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('38', '88', 'quaoar', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('36', '12', 'haumea', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('34', '84', 'pluto', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('32', '16', 'orcus', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('30', '80', 'neptune', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('28', '20', 'uranus', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('25', '75', 'saturn', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('22', '28', 'jupiter', '4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('18', '68', 'ceres', '1'); ?>
-        <?= OrbitSvg::generateOrbitSvg('16', '34', 'mars', '1.6'); ?>
-        <?= OrbitSvg::generateOrbitSvg('14', '64', 'earth', '2'); ?>
-        <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
-        <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
+        <svg class="orbit-svg" width="100%" height="100%">
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="48%" ry="48%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="46%" ry="46%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="44%" ry="44%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="42%" ry="42%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="38%" ry="38%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="36%" ry="36%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="34%" ry="34%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="32%" ry="32%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="30%" ry="30%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="28%" ry="28%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="25%" ry="25%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="22%" ry="22%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="18%" ry="18%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="16%" ry="16%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="14%" ry="14%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="12%" ry="12%" stroke="white" stroke-width="1" fill="none"></ellipse>
+            <ellipse  class="orbit" cx="50%" cy="50%" rx="10%" ry="10%" stroke="white" stroke-width="1" fill="none"></ellipse>
+        </svg>
 
-        <?= OrbitSvg::generatePlanetSvg('sedna', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('eris', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('gonggong', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('makemake', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('quaoar', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('haumea', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('pluto', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('orcus', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('neptune', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('uranus', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('saturn', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('jupiter', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('ceres', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('mars', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('earth', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('venus', '30'); ?>
-        <?= OrbitSvg::generatePlanetSvg('mercury', '30'); ?>
-
+        <?php
+        foreach ($allPlanets as $planet){
+            echo $planet->displayPlanetImage();
+        }
+        ?>
 
     </div>
     <?php

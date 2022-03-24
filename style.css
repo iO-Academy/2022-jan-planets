@@ -100,10 +100,14 @@ main .sun-image {
     display: none;
   }
 
+  main {
+    padding: 20px;
+  }
+
   .solar-system-container {
     display: block;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     position: relative;
   }
   .solar-system-container .orbit-svg {
@@ -113,126 +117,84 @@ main .sun-image {
     stroke: #595858;
   }
   .solar-system-container .desktop {
-    width: 12%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 1;
   }
-  .solar-system-container #sedna {
-    fill: #e6e6e6;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .sun-image {
+    width: 12%;
+    left: 50%;
+  }
+  .solar-system-container .Sedna {
+    width: 5%;
     left: 97%;
   }
-  .solar-system-container #eris {
-    fill: #6e2e2e;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Eris {
+    width: 5%;
     left: 3%;
   }
-  .solar-system-container #gonggong {
-    fill: #956986;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Gonggong {
+    width: 5%;
     left: 93%;
   }
-  .solar-system-container #makemake {
-    fill: #6e2e2e;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Makemake {
+    width: 5%;
     left: 7%;
   }
-  .solar-system-container #quaoar {
-    fill: #573232;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Quaoar {
+    width: 5%;
     left: 87%;
   }
-  .solar-system-container #haumea {
-    fill: #808080;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Haumea {
+    width: 5%;
     left: 11.5%;
   }
-  .solar-system-container .haumea-ring {
-    stroke: #808080;
-    position: relative;
-    top: 50%;
-    left: 98%;
-  }
-  .solar-system-container #pluto {
-    fill: #ffffff;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Pluto {
+    width: 5%;
     left: 83%;
   }
-  .solar-system-container #orcus {
-    fill: #424242;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Orcus {
+    width: 5%;
     left: 17%;
   }
-  .solar-system-container #neptune {
-    fill: #414bb2;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Neptune {
+    width: 5%;
     left: 79%;
   }
-  .solar-system-container #uranus {
-    fill: #ace5e8;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Uranus {
+    width: 5%;
     left: 21%;
   }
-  .solar-system-container #saturn {
-    fill: #fac711;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Saturn {
+    width: 5%;
     left: 72%;
   }
-  .solar-system-container .saturn-ring {
-    stroke: #fac711;
-  }
-  .solar-system-container #jupiter {
-    fill: #aa5f90;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Jupiter {
+    width: 5%;
     left: 29%;
   }
-  .solar-system-container #ceres {
-    fill: #808080;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Ceres {
+    width: 5%;
     left: 67%;
   }
-  .solar-system-container #mars {
-    fill: #f45642;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Mars {
+    width: 5%;
     left: 33%;
   }
-  .solar-system-container #earth {
-    position: absolute;
-    fill: #2d9bf0;
-    top: 50%;
+  .solar-system-container .Earth {
+    width: 5%;
     left: 63%;
   }
-  .solar-system-container #venus {
-    fill: #e6e6e6;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Venus {
+    width: 5%;
     left: 37%;
   }
-  .solar-system-container #mercury {
-    fill: #b4badf;
-    position: absolute;
-    top: 50%;
+  .solar-system-container .Mercury {
+    width: 5%;
     left: 59%;
   }
-
-  .planet-card {
+  .solar-system-container .planet-card {
     position: absolute;
     bottom: 0;
     left: 20px;
