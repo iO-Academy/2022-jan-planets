@@ -7,7 +7,8 @@ body {
   background-attachment: fixed;
   color: white;
 }
-header {
+
+.title-image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,7 +68,7 @@ main {
   }
 }
 
-.planets-container {
+.planets-container-mobile {
   display: flex;
   gap: 50px;
   width: 100%;

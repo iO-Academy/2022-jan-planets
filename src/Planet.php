@@ -113,6 +113,6 @@ class Planet
     }
     public function displayPlanetImage(): string
     {
-        return '<img class="' . $this->name . ' desktop " src="images/' . $this->image_src . '"' . ' alt="' . $this->name . '">';
+        return '<a href="./planet.php?planetId='.$this->id . '"><img class="' . $this->name . ' desktop " src="images/' . $this->image_src . '"' . ' alt="' . $this->name . '"></a>';
     }
 }

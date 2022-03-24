@@ -23,11 +23,11 @@ $allPlanets = PlanetHydrator::getPlanets($db);
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <h1>Planet Plinky Plonk</h1>
-    <img id="title-image" src="images/planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
-</header>
 <main>
+    <div class="title-image-container">
+        <h1>Planet Plinky Plonk</h1>
+        <img id="title-image" src="images/planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
+    </div>
     <img class="sun-image mobile" src="images/sun.png" alt="Sun"/>
     <div class="solar-system-container">
         <img class="sun-image desktop" src="images/sun.png" alt="Sun"/>
@@ -56,8 +56,14 @@ $allPlanets = PlanetHydrator::getPlanets($db);
             echo $planet->displayPlanetImage();
         }
         ?>
+
+            <?php
+            foreach ($allPlanets as $planet) {
+                echo $planet->createCardHtml();
+            }
+            ?>
     </div>
-    <div class="planets-container">
+    <div class="planets-container-mobile">
         <?php
         foreach ($allPlanets as $planet) {
             echo $planet->createCardHtml();

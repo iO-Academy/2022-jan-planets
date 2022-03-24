@@ -15,12 +15,25 @@
     display: none;
   }
 
+  .click-prompt {
+    border: 2px solid #03FC13;
+    border-radius: 5px;
+    color: #03FC13;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    z-index: 1;
+    font-size: 1rem;
+    width: 250px;
+    background-color: #0b2e1399;
+  }
+
   .title-image-container {
     position: absolute;
     width: 95%;
     z-index: 1;
-    border: #ffffff solid 2px;
-    border-radius: 20px;
     padding: 0;
     margin-top: 10px;
     display: flex;
@@ -55,6 +68,7 @@
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
       z-index: 1;
+      cursor: pointer;
     }
 
     .sun-image {
@@ -149,18 +163,19 @@
   }
     .planet-card {
       position: absolute;
-      bottom: 10px;
+      bottom: 5px;
       left: 20px;
-      max-width: 250px;
+      width: 15%;
+      height: auto;
       border: 2px #ffffff solid;
       border-radius: 10px;
       background-color: #07040599;
+      padding: 10px;
 
-      .planet-card-info-container {
-        .learn-more-button {
-          width: 100%;
-        }
+      .learn-more-button {
+      display: none;
       }
+    }
  }
 
 
@@ -185,5 +200,4 @@
   100% {
     filter: drop-shadow(0 0 20px #ffffff);
   }
-}
 }
