@@ -100,15 +100,14 @@ class Planet
 
     public function createCardHtml(): string
     {
-        return('
+        return ('
         <div class="planet-card" id="planet-'.$this->id.'">
-            <a href="./planet.php?planetId='.$this->id.'"><img src="'.$this->image_src.'"></a>
+            <a href="./planet.php?planetId='.$this->id.'"><img src="images/' . $this->image_src . '" alt="'.$this->name.'"></a>
             <div class="planet-card-info-container">
-                <a href="./planet.php?planetId='.$this->id.'"><h2>'.$this->name.'</h2></a>
-                <h3>'.$this->type.'</h3>
+                <a href="./planet.php?planetId='.$this->id . '"><h2>' . $this->name . '</h2></a>
+                <h3>' . $this->type . '</h3>
             </div>
         </div>
         ');
     }
-
 }
