@@ -1,0 +1,102 @@
+body {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 10px;
+  background-image: url("cosmos-1853491_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#title-image {
+  padding: 50px;
+  width: 100%;
+  max-width: 500px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  .sun-image {
+    filter: drop-shadow(0 0 50px #ef5f02);
+    width: 100%;
+    animation: glow-animation 2s linear infinite;
+  }
+
+  @keyframes glow-animation {
+    0% {
+      filter: drop-shadow(0 0 50px #ef5f02);
+    }
+    50% {
+      filter: drop-shadow(0 0 50px #c31b02);
+    }
+    100% {
+      filter: drop-shadow(0 0 50px #ef5f02);
+    }
+  }
+}
+
+.planets-container {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.planet-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+  .planet-card-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .sun-image {
+    max-width: 350px;
+  }
+  .planet-card {
+    max-width: 200px;
+  }
+}
