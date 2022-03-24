@@ -41,7 +41,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 
     <div class="solar-system-container">
         <img class="sun-image desktop" src="sun.png" alt="Sun"/>
-        <?= OrbitSvg::generateOrbitSvg('48', '98', 'senda', '1'); ?>
+        <?= OrbitSvg::generateOrbitSvg('48', '98', 'sedna', '1'); ?>
         <?= OrbitSvg::generateOrbitSvg('46', '4', 'eris', '1'); ?>
         <?= OrbitSvg::generateOrbitSvg('44', '94', 'gonggong', '1'); ?>
         <?= OrbitSvg::generateOrbitSvg('42', '8', 'makemake', '1'); ?>
@@ -59,7 +59,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
         <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
         <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
 
-        <?= OrbitSvg::generatePlanetSvg('senda', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('sedna', '30'); ?>
         <?= OrbitSvg::generatePlanetSvg('eris', '30'); ?>
         <?= OrbitSvg::generatePlanetSvg('gonggong', '30'); ?>
         <?= OrbitSvg::generatePlanetSvg('makemake', '30'); ?>
