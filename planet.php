@@ -29,7 +29,7 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
     <a href="./index.php#planet-<?=$planetId?>"><button type="button"><</button></a>
 </nav>
 <header>
-<h1><?=$planet->getName()?></h1>
+    <h1><?=$planet->getName()?></h1>
 </header>
 <main>
     <img src="<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
