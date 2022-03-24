@@ -4,12 +4,14 @@ body {
   color: #ffffff;
   font-size: 10px
 }
+
 h1 {
   margin: 20px;
   font-size: 3rem;
   font-weight: 900;
   text-align: center;
 }
+
 h2 {
   font-size: 1.6rem;
   text-align: center;
@@ -40,10 +42,10 @@ main {
       color: #000000;
     }
   }
+
   .desktop-button-text {
     display: none;
   }
-
 
   img {
     width: 100%;
@@ -54,12 +56,14 @@ main {
     font-size: 1rem;
     text-align: center;
   }
+
   .planet-description-text {
     border-top: solid 2px #7B7B7B;
     border-bottom: solid 2px #7B7B7B;
     margin: 0;
     padding: 30px 0;
   }
+
   .details-table {
     width: 100%;
     display: grid;
@@ -69,6 +73,7 @@ main {
       margin: 4px;
     }
   }
+
   .detail-table-heading {
     font-weight: 600;
     color: #E875AB;
@@ -84,6 +89,7 @@ main {
       display: inline;
     }
   }
+
   .image-source-text {
     text-align: center;
   }
@@ -93,14 +99,17 @@ main {
     text-align: left;
     margin: 0;
   }
+
   h2 {
     grid-column: 2;
     font-size: 1.5rem;
     text-align: left;
   }
+
   .planet-image-section {
     grid-column: 1;
   }
+
   .planet-details-section {
     grid-column: 2;
   }
