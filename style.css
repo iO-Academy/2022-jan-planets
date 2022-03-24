@@ -77,6 +77,10 @@ main .sun-image {
     background-image: linear-gradient(to bottom, #00000050, #00000050), url("cosmos-1853491_1920.jpg");
   }
 
+  main {
+    padding: 0;
+  }
+
   .hidden-on-desktop {
     display: none;
   }
@@ -88,6 +92,7 @@ main .sun-image {
     border: #ffffff solid 2px;
     border-radius: 20px;
     padding: 0;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
   }
@@ -123,81 +128,82 @@ main .sun-image {
     left: 50%;
   }
   .solar-system-container .Sedna {
-    width: 5%;
-    left: 97%;
+    width: 3.5%;
+    left: 98%;
   }
   .solar-system-container .Eris {
     width: 5%;
-    left: 3%;
+    left: 4%;
   }
   .solar-system-container .Gonggong {
-    width: 5%;
-    left: 93%;
+    width: 3%;
+    left: 94%;
   }
   .solar-system-container .Makemake {
-    width: 5%;
-    left: 7%;
+    width: 3.5%;
+    left: 8%;
   }
   .solar-system-container .Quaoar {
-    width: 5%;
-    left: 87%;
+    width: 3%;
+    left: 88%;
   }
   .solar-system-container .Haumea {
-    width: 5%;
-    left: 11.5%;
+    width: 4.5%;
+    left: 12%;
   }
   .solar-system-container .Pluto {
     width: 5%;
-    left: 83%;
+    left: 84%;
   }
   .solar-system-container .Orcus {
-    width: 5%;
-    left: 17%;
+    width: 4%;
+    left: 16%;
   }
   .solar-system-container .Neptune {
-    width: 5%;
-    left: 79%;
+    width: 5.5%;
+    left: 80%;
   }
   .solar-system-container .Uranus {
-    width: 5%;
-    left: 21%;
+    width: 6%;
+    left: 20%;
   }
   .solar-system-container .Saturn {
-    width: 5%;
-    left: 72%;
+    width: 8%;
+    left: 75%;
   }
   .solar-system-container .Jupiter {
-    width: 5%;
-    left: 29%;
+    width: 9%;
+    left: 28%;
   }
   .solar-system-container .Ceres {
-    width: 5%;
-    left: 67%;
+    width: 3%;
+    left: 68%;
   }
   .solar-system-container .Mars {
-    width: 5%;
-    left: 33%;
+    width: 4%;
+    left: 34%;
   }
   .solar-system-container .Earth {
-    width: 5%;
-    left: 63%;
+    width: 4.5%;
+    left: 64%;
   }
   .solar-system-container .Venus {
-    width: 5%;
-    left: 37%;
+    width: 4.5%;
+    left: 38%;
   }
   .solar-system-container .Mercury {
-    width: 5%;
-    left: 59%;
+    width: 3%;
+    left: 60%;
   }
 
   .planet-card {
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 20px;
     width: 10%;
     border: 2px #ffffff solid;
     border-radius: 10px;
+    background-color: #07040599;
   }
 
   h2 {
@@ -206,6 +212,23 @@ main .sun-image {
 
   h3 {
     font-size: 1rem;
+  }
+
+  .hover {
+    filter: drop-shadow(0 0 50px #ffffff);
+    animation: planet-glow-animation 1s linear infinite;
+  }
+
+  @keyframes planet-glow-animation {
+    0% {
+      filter: drop-shadow(0 0 20px #ffffff);
+    }
+    50% {
+      filter: drop-shadow(0 0 20px #f0d2bd);
+    }
+    100% {
+      filter: drop-shadow(0 0 20px #ffffff);
+    }
   }
 }
 

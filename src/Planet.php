@@ -25,20 +25,16 @@ class Planet
 
     public function createCardHtml(): string
     {
-        return('
-        <div id="'. $this->name .'" class="planet-card hidden-on-desktop shown-on-desktop">
-            <img src="images/'.$this->image_src.'">
-            <div class="planet-card-info-container">
-                <h2>'.$this->name.'</h2>
-                <h3>'.$this->type.'</h3>
-            </div>
-        </div>
-        ');
+        return '<div id="'. $this->name .'" class="planet-card hidden-on-desktop shown-on-desktop">' .
+                    '<img src="images/'.$this->image_src.'">' .
+                    '<div class="planet-card-info-container">' .
+                        '<h2>'.$this->name.'</h2>' .
+                        '<h3>'.$this->type.'</h3>' .
+                    '</div>' .
+                 '</div>';
     }
     public function displayPlanetImage(): string
     {
-        return ('
-                <img class="' . $this->name . ' desktop " src="images/' . $this->image_src . '"' . ' alt="' . $this->name . '">
-        ');
+        return '<img class="' . $this->name . ' desktop " src="images/' . $this->image_src . '"' . ' alt="' . $this->name . '">';
     }
 }
