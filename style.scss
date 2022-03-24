@@ -1,7 +1,7 @@
 body {
   font-family: 'Archivo Black', sans-serif;
   font-size: 10px;
-  background-image: url("cosmos-1853491_1920.jpg");
+  background-image: url("images/cosmos-1853491_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -26,6 +26,14 @@ h2 {
 h3 {
   font-size: 1.2rem;
   margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  &:active {
+    color: #ffffff;
+  }
 }
 
 #title-image {
@@ -66,6 +74,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: baseline;
   padding-bottom: 20px;
 }
 
@@ -84,6 +93,20 @@ main {
     flex-direction: column;
     align-items: center;
   }
+  .learn-more-button {
+    color: #03FC13;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 20px 0;
+    border: 2px solid #03FC13;
+    border-radius: 5px;
+    transition: 1s;
+
+    &:hover {
+      border-color: #ffffff;
+      color: #ffffff;
+    }
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -97,6 +120,6 @@ main {
     max-width: 350px;
   }
   .planet-card {
-    max-width: 200px;
+    max-width: 300px;
   }
 }
