@@ -31,7 +31,7 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
 </head>
 <body>
 <main>
-    <a class="button-container" href="./index.php#planet-<?=$planetId?>"><button type="button"><<object class="desktop-button-text"> Planets</object></button></a>
+    <a class="back-button" href="./index.php#planet-<?=$planetId?>">&#8637 <object class="desktop-button-text"> Planets</object></a>
     <h1><?=$planet->getName()?></h1>
     <div class="planet-image-section">
         <img src="./images/<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
@@ -60,7 +60,7 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
             <p class="detail-table-heading">Number of moons</p>
             <p><?=$planet->getNumberOfMoons()?></p>
             <p class="detail-table-heading">Mean surface temperature</p>
-            <p><?=$planet->getMeanSurfaceTemperatureC()?> C</p>
+            <p><?=$planet->getMeanSurfaceTemperatureC()?> °C</p>
         </div>
     </div>
 </main>

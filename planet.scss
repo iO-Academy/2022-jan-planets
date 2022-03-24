@@ -24,22 +24,22 @@ main {
   font-size: 1.5rem;
   margin: 15px;
 
-  button {
+  .back-button {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     background-color: #000000;
-    color: #ffffff;
+    color: #03FC13;
     font-weight: 600;
-    font-size: 1.2rem;
-    border: solid 1px #ffffff;
-    padding: 10px 20px;
+    font-size: 2rem;
+    border: solid 1px #03FC13;
+    padding: 20px 23px;
     margin: 5px;
-    transition: 0.3s;
-
+    transition: 1s;
+    text-decoration: none;
     &:hover {
-      background-color: #ffffff;
-      color: #000000;
+      border-color: #ffffff;
+      color: #ffffff;
     }
   }
 
@@ -81,12 +81,19 @@ main {
 }
 
 @media screen and (min-width: 800px) {
+
   main {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr;
     .desktop-button-text {
       display: inline;
+    }
+    .back-button {
+      font-size: 1.2rem;
+    }
+    .desktop-button-text {
+      font-size: 1.2rem;
     }
   }
 

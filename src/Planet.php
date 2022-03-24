@@ -106,6 +106,7 @@ class Planet
             <div class="planet-card-info-container">
                 <a href="./planet.php?planetId='.$this->id . '"><h2>' . $this->name . '</h2></a>
                 <h3>' . $this->type . '</h3>
+                <a class="learn-more-button" href="./planet.php?planetId='.$this->id.'">Learn more about '.$this->name.'</a>
             </div>
         </div>
         ');
