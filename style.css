@@ -19,16 +19,17 @@ h3 {
   margin: 0;
 }
 
+#title-image {
+  padding-top: 50px;
+  width: 100%;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
   padding: 20px;
-}
-main #title-image {
-  padding-top: 50px;
-  width: 100%;
 }
 main .sun-image {
   filter: drop-shadow(0 0 50px #ef5f02);
@@ -48,8 +49,7 @@ main .sun-image {
 }
 
 .planet-card {
-  width: 90%;
-  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

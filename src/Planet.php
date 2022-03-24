@@ -27,7 +27,7 @@ class Planet
     {
         return ('
         <div class="planet-card">
-            <img src="images/' . $this->image_src . '">
+            <img src="images/' . $this->image_src . '" alt="'.$this->name.'">
             <div class="planet-card-info-container">
                 <h2>' . $this->name . '</h2>
                 <h3>' . $this->type . '</h3>
