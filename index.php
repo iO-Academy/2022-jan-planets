@@ -1,8 +1,5 @@
 <?php
-
-use PlanetApp\OrbitSvg;
 use PlanetApp\PlanetHydrator;
-
 require 'vendor/autoload.php';
 
 $dsn = 'mysql:host=db; dbname=planet_collection';
@@ -14,9 +11,7 @@ $db = new PDO($dsn, $username, $password);
 $allPlanets = PlanetHydrator::getPlanets($db);
 
 ?>
-
 <!DOCTYPE html>
-
 <html lang="en-GB">
 <head>
     <title>Planet Plinky Plonk</title>
@@ -30,17 +25,12 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 <body>
 <header>
     <h1>Planet Plinky Plonk</h1>
+    <img id="title-image" src="images/planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
 </header>
 <main>
-    <div class="title-image-container">
-    <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
-    </div>
-    <img class="sun-image mobile" src="sun.png" alt="Sun"/>
-
-    <h1>Planet Plinky Plonk</h1>
-
+    <img class="sun-image mobile" src="images/sun.png" alt="Sun"/>
     <div class="solar-system-container">
-        <img class="sun-image desktop" src="sun.png" alt="Sun"/>
+        <img class="sun-image desktop" src="images/sun.png" alt="Sun"/>
         <svg class="orbit-svg" width="100%" height="100%">
             <ellipse  class="orbit" cx="50%" cy="50%" rx="48%" ry="48%" stroke="white" stroke-width="1" fill="none"></ellipse>
             <ellipse  class="orbit" cx="50%" cy="50%" rx="46%" ry="46%" stroke="white" stroke-width="1" fill="none"></ellipse>
@@ -66,13 +56,14 @@ $allPlanets = PlanetHydrator::getPlanets($db);
             echo $planet->displayPlanetImage();
         }
         ?>
-
     </div>
-    <?php
-    foreach ($allPlanets as $planet){
-        echo $planet->createCardHtml();
-    }
-    ?>
+    <div class="planets-container">
+        <?php
+        foreach ($allPlanets as $planet) {
+            echo $planet->createCardHtml();
+        }
+        ?>
+    </div>
 </main>
 </body>
 </html>

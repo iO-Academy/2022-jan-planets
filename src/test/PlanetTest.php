@@ -1,7 +1,6 @@
 <?php
 
 namespace PlanetApp\Test;
-
 use PHPUnit\Framework\TestCase;
 use PlanetApp\Planet;
 
@@ -9,22 +8,23 @@ class PlanetTest extends TestCase
 {
     public function testSuccessCreateCardHtml()
     {
-        $Planet = new Planet();
-        $Planet->setName('Uranus');
-        $Planet->setType('Ice giant');
-        $Planet->setImageSrc('pretend-url');
+        $planet = new Planet();
+        $planet->setId(1);
+        $planet->setName('Uranus');
+        $planet->setType('Ice giant');
+        $planet->setImageSrc('pretend-url');
 
         $expectedOutput = '
-             <div id="Uranus" class="planet-card hidden-on-desktop shown-on-desktop">
-                <img src="images/pretend-url"/>
-                <div class="planet-card-info-container">
-                    <h2>Uranus</h2>
-                    <h3>Ice giant</h3>
-                </div>
+        <div class="planet-card" id="planet-1">
+            <a href="./planet.php?planetId=1"><img src="images/pretend-url" alt="Uranus"></a>
+            <div class="planet-card-info-container">
+                <a href="./planet.php?planetId=1"><h2>Uranus</h2></a>
+                <h3>Ice giant</h3>
+                <a class="learn-more-button" href="./planet.php?planetId=1">Learn more about Uranus</a>
             </div>
-           ';
-
-        $actualOutput = $Planet->createCardHtml();
+        </div>
+        ';
+        $actualOutput = $planet->createCardHtml();
         $this->assertEquals($expectedOutput, $actualOutput);
     }
 
