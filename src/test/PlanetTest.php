@@ -16,7 +16,7 @@ class PlanetTest extends TestCase
 
         $expectedOutput = '
         <div class="planet-card" id="planet-1">
-            <a href="./planet.php?planetId=1"><img src="pretend-url" alt="Uranus"></a>
+            <a href="./planet.php?planetId=1"><img src="images/pretend-url" alt="Uranus"></a>
             <div class="planet-card-info-container">
                 <a href="./planet.php?planetId=1"><h2>Uranus</h2></a>
                 <h3>Ice giant</h3>

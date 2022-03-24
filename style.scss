@@ -28,6 +28,14 @@ h3 {
   margin: 0;
 }
 
+a {
+  color: #ffffff;
+  text-decoration: none;
+  &:active {
+    color: #ffffff;
+  }
+}
+
 #title-image {
   padding: 50px;
   width: 100%;
@@ -66,6 +74,7 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: baseline;
   padding-bottom: 20px;
 }
 

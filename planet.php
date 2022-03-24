@@ -31,31 +31,37 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
 </head>
 <body>
 <main>
-
-    <img src=".\images\<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
-    <?php if($planet->getFullName() != null) {echo '<h2>Full Name: '.$planet->getFullName().'</h2>';}?>
-    <p>
-        <?=$planet->getDescription()?>
-    </p>
-    <div class="details-table">
-        <p class="detail-table-heading">Planet type</p>
-        <p><?=$planet->getType()?></p>
-        <p class="detail-table-heading">Length of day</p>
-        <p><?=$planet->getLengthOfDay()?> Earth days</p>
-        <p class="detail-table-heading">Length of year</p>
-        <p><?=$planet->getLengthOfYear()?> Earth years</p>
-        <p class="detail-table-heading">Mean radius</p>
-        <p><?=$planet->getMeanRadiusKm()?>km</p>
-        <p class="detail-table-heading">Mean distance from Sun</p>
-        <p><?=$planet->getMeanDistanceFromSunAu()?>au</p>
-        <p class="detail-table-heading">Star</p>
-        <p><?=$planet->getSun()?></p>
-        <p class="detail-table-heading">Mass</p>
-        <p><?=$planet->getMassEarths()?> Earths</p>
-        <p class="detail-table-heading">Number of moons</p>
-        <p><?=$planet->getNumberOfMoons()?></p>
-        <p class="detail-table-heading">Mean surface temperature</p>
-        <p><?=$planet->getMeanSurfaceTemperatureC()?> C</p>
+    <a class="button-container" href="./index.php#planet-<?=$planetId?>"><button type="button"><<object class="desktop-button-text"> Planets</object></button></a>
+    <h1><?=$planet->getName()?></h1>
+    <div class="planet-image-section">
+        <img src="./images/<?=$planet->getImageSrc()?>" alt="<?=$planet->getName()?>">
+        <p class="image-source-text">Source: <?=$planet->getImageDescription()?></p>
+    </div>
+    <div class="planet-details-section">
+        <?php if($planet->getFullName() != null) {echo '<h2>Full Name: '.$planet->getFullName().'</h2>';}?>
+        <p class="planet-description-text">
+            <?=$planet->getDescription()?>
+        </p>
+        <div class="details-table">
+            <p class="detail-table-heading">Planet type</p>
+            <p><?=$planet->getType()?></p>
+            <p class="detail-table-heading">Length of day</p>
+            <p><?=$planet->getLengthOfDay()?> Earth days</p>
+            <p class="detail-table-heading">Length of year</p>
+            <p><?=$planet->getLengthOfYear()?> Earth years</p>
+            <p class="detail-table-heading">Mean radius</p>
+            <p><?=$planet->getMeanRadiusKm()?>km</p>
+            <p class="detail-table-heading">Mean distance from Sun</p>
+            <p><?=$planet->getMeanDistanceFromSunAu()?>au</p>
+            <p class="detail-table-heading">Star</p>
+            <p><?=$planet->getSun()?></p>
+            <p class="detail-table-heading">Mass</p>
+            <p><?=$planet->getMassEarths()?> Earths</p>
+            <p class="detail-table-heading">Number of moons</p>
+            <p><?=$planet->getNumberOfMoons()?></p>
+            <p class="detail-table-heading">Mean surface temperature</p>
+            <p><?=$planet->getMeanSurfaceTemperatureC()?> C</p>
+        </div>
     </div>
 </main>
 </body>
