@@ -1,7 +1,10 @@
 body {
   font-family: "Archivo Black", sans-serif;
   font-size: 10px;
-  background-image: url("stars-background.jpg");
+  background-image: url("cosmos-1853491_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
   color: white;
 }
 
@@ -48,8 +51,17 @@ main .sun-image {
   }
 }
 
+.planets-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .planet-card {
   width: 100%;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,14 +77,6 @@ main .sun-image {
 }
 
 @media screen and (min-width: 600px) {
-  .planets-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   h2 {
     font-size: 2rem;
   }
@@ -83,10 +87,6 @@ main .sun-image {
 
   .sun-image {
     max-width: 350px;
-  }
-
-  .planet-card {
-    max-width: 200px;
   }
 }
 
