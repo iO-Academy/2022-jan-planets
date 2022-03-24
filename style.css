@@ -19,12 +19,12 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -39,7 +39,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 20px;
 }
 main .sun-image {
   filter: drop-shadow(0 0 50px #ef5f02);
@@ -60,6 +59,7 @@ main .sun-image {
 
 .planets-container {
   display: flex;
+  gap: 50px;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,11 +68,9 @@ main .sun-image {
 
 .planet-card {
   width: 100%;
-  max-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
 }
 .planet-card img {
   width: 100%;
@@ -89,11 +87,15 @@ main .sun-image {
   }
 
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 
   .sun-image {
     max-width: 350px;
+  }
+
+  .planet-card {
+    max-width: 200px;
   }
 }
 
