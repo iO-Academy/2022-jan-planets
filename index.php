@@ -24,10 +24,10 @@ $allPlanets = PlanetHydrator::getPlanets($db);
 <body>
 <header>
     <h1>Planet Plinky Plonk</h1>
-    <img id="title-image" src="planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
+    <img id="title-image" src="images/planet-plinky-plonk.png" alt="Planet Plinky Plonk"/>
 </header>
 <main>
-    <img class="sun-image mobile" src="sun.png" alt="Sun"/>
+    <img class="sun-image mobile" src="images/sun.png" alt="Sun"/>
     <div class="planets-container">
         <?php
         foreach ($allPlanets as $planet) {
