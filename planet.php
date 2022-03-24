@@ -43,7 +43,7 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
                 <p class="detail-table-heading">Planet type</p>
                 <p><?=$planet->getType()?></p>
                 <p class="detail-table-heading">Length of day</p>
-                <p><?=$planet->getLengthOfDay()==='unknown'?'unknown':$planet->getLengthOfDay().' Earth days'?></p>
+                <p><?=$planet->getLengthOfDay()===null?'unknown':$planet->getLengthOfDay().' Earth days'?></p>
                 <p class="detail-table-heading">Length of year</p>
                 <p><?=$planet->getLengthOfYear()?> Earth years</p>
                 <p class="detail-table-heading">Mean radius</p>
@@ -53,7 +53,7 @@ $planet = PlanetHydrator::getPlanet($db, $planetId);
                 <p class="detail-table-heading">Star</p>
                 <p><?=$planet->getSun()?></p>
                 <p class="detail-table-heading">Mass</p>
-                <p><?=$planet->getMassEarths() === 'unknown'?'unknown':$planet->getMassEarths().' Earths'?></p>
+                <p><?=$planet->getMassEarths()===null?'unknown':$planet->getMassEarths().' Earths'?></p>
                 <p class="detail-table-heading">Number of moons</p>
                 <p><?=$planet->getNumberOfMoons()?></p>
                 <p class="detail-table-heading">Mean surface temperature</p>

@@ -30,39 +30,39 @@ class Planet
     }
     public function getSun(): string
     {
-        return ($this->sun === null) ? 'unknown' : $this->sun;
+        return $this->sun === null;
     }
     public function getType(): string
     {
-        return ($this->type === null) ? 'unknown' : $this->type;
+        return $this->type === null;
     }
     public function getLengthOfDay(): string
     {
-        return ($this->length_of_day === null) ? 'unknown' : $this->length_of_day;
+        return $this->length_of_day === null;
     }
     public function getLengthOfYear(): string
     {
-        return ($this->length_of_year === null) ? 'unknown' : $this->length_of_year;
+        return $this->length_of_year === null;
     }
     public function getMeanRadiusKm(): string
     {
-        return ($this->mean_radius_km === null) ? 'unknown' : $this->mean_radius_km;
+        return $this->mean_radius_km === null;
     }
     public function getMassEarths(): string
     {
-        return ($this->mass_earths === null) ? 'unknown' : $this->mass_earths;
+        return $this->mass_earths === null;
     }
     public function getMeanDistanceFromSunAu(): string
     {
-        return ($this->mean_distance_from_sun_au === null) ? 'unknown' : $this->mean_distance_from_sun_au;
+        return $this->mean_distance_from_sun_au === null;
     }
     public function getNumberOfMoons(): string
     {
-        return ($this->number_of_moons === null) ? 'unknown' : $this->number_of_moons;
+        return $this->number_of_moons === null;
     }
     public function getMeanSurfaceTemperatureC(): string
     {
-        return ($this->mean_surface_temperature_c === null) ? 'unknown' : $this->mean_surface_temperature_c;
+        return $this->mean_surface_temperature_c === null;
     }
     public function getFullName(): ?string
     {
@@ -70,12 +70,12 @@ class Planet
     }
     public function getDescription(): string
     {
-        return ($this->description === null) ? 'unknown' : $this->description;
+        return $this->description === null;
     }
 
     public function getImageDescription(): string
     {
-        return ($this->image_description === null) ? 'unknown' : $this->image_description;
+        return $this->image_description === null;
     }
 
     public function setId(int $id): void
