@@ -20,47 +20,47 @@ class Planet
     protected ?string $description;
     protected ?string $image_description;
 
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
-    public function getImageSrc(): string
+    public function getImageSrc(): ?string
     {
         return $this->image_src;
     }
-    public function getSun(): string
+    public function getSun(): ?string
     {
         return $this->sun;
     }
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
-    public function getLengthOfDay(): string
+    public function getLengthOfDay(): ?float
     {
         return $this->length_of_day;
     }
-    public function getLengthOfYear(): string
+    public function getLengthOfYear(): ?float
     {
         return $this->length_of_year;
     }
-    public function getMeanRadiusKm(): string
+    public function getMeanRadiusKm(): ?float
     {
         return $this->mean_radius_km;
     }
-    public function getMassEarths(): string
+    public function getMassEarths(): ?float
     {
         return $this->mass_earths;
     }
-    public function getMeanDistanceFromSunAu(): string
+    public function getMeanDistanceFromSunAu(): ?float
     {
         return $this->mean_distance_from_sun_au;
     }
-    public function getNumberOfMoons(): string
+    public function getNumberOfMoons(): ?int
     {
         return $this->number_of_moons;
     }
-    public function getMeanSurfaceTemperatureC(): string
+    public function getMeanSurfaceTemperatureC(): ?string
     {
         return $this->mean_surface_temperature_c;
     }
@@ -68,12 +68,12 @@ class Planet
     {
         return $this->full_name;
     }
-    public function getDescription(): string
+    public function getDescription(): ?string
     {
         return $this->description;
     }
 
-    public function getImageDescription(): string
+    public function getImageDescription(): ?string
     {
         return $this->image_description;
     }
