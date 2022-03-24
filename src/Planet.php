@@ -26,7 +26,7 @@ class Planet
     }
     public function getImageSrc(): string
     {
-        return ($this->image_src === null) ? 'planet_not_found.png' : $this->image_src;
+        return $this->image_src;
     }
     public function getSun(): string
     {
