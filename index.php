@@ -38,6 +38,7 @@ $allPlanets = PlanetHydrator::getPlanets($db);
     <img class="sun-image mobile" src="sun.png" alt="Sun"/>
 
     <h1>Planet Plinky Plonk</h1>
+
     <div class="solar-system-container">
         <img class="sun-image desktop" src="sun.png" alt="Sun"/>
         <?= OrbitSvg::generateOrbitSvg('48', '98', 'senda', '1'); ?>
@@ -57,12 +58,25 @@ $allPlanets = PlanetHydrator::getPlanets($db);
         <?= OrbitSvg::generateOrbitSvg('14', '64', 'earth', '2'); ?>
         <?= OrbitSvg::generateOrbitSvg('12', '38', 'venus', '1.4'); ?>
         <?= OrbitSvg::generateOrbitSvg('10', '60', 'mercury', '1'); ?>
-        <svg id="earth" width="30px" height="30px">
-            <circle class="planet-svg" id="earth" r="15" cx="50%" cy="50%" stroke="none" stroke-width="1"></circle>' .
-        </svg>
-        <svg id="mars" width="30px" height="30px">
-            <circle class="planet-svg" id="earth" r="15" cx="50%" cy="50%" stroke="none" stroke-width="1"></circle>' .
-        </svg>
+
+        <?= OrbitSvg::generatePlanetSvg('senda', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('eris', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('gonggong', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('makemake', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('quaoar', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('haumea', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('pluto', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('orcus', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('neptune', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('uranus', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('saturn', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('jupiter', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('ceres', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('mars', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('earth', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('venus', '30'); ?>
+        <?= OrbitSvg::generatePlanetSvg('mercury', '30'); ?>
+
 
     </div>
     <?php

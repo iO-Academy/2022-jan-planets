@@ -44,7 +44,7 @@ main {
 
 }
 .planet-card {
-  width: 90%;
+  width: 25%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ main {
   padding: 30px;
 
   img {
-    width: 75vw;
+    width: 100%;
   }
 
   .planet-card-info-container {
@@ -75,6 +75,7 @@ main {
 .hidden {
   display: none;
 }
+
 @import "solarSystem.scss";
 
 

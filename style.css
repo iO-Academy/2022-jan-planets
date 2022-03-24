@@ -38,7 +38,7 @@ main .sun-image {
 }
 
 .planet-card {
-  width: 90%;
+  width: 25%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@ main .sun-image {
   padding: 30px;
 }
 .planet-card img {
-  width: 75vw;
+  width: 100%;
 }
 .planet-card .planet-card-info-container {
   display: flex;
@@ -120,75 +120,126 @@ main .sun-image {
   }
   .solar-system-container #senda {
     fill: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 97%;
   }
   .solar-system-container #eris {
     fill: #6e2e2e;
+    position: absolute;
+    top: 50%;
+    left: 3%;
   }
   .solar-system-container #gonggong {
     fill: #956986;
+    position: absolute;
+    top: 50%;
+    left: 93%;
   }
   .solar-system-container #makemake {
     fill: #6e2e2e;
+    position: absolute;
+    top: 50%;
+    left: 7%;
   }
   .solar-system-container #quaoar {
     fill: #573232;
+    position: absolute;
+    top: 50%;
+    left: 87%;
   }
   .solar-system-container #haumea {
     fill: #808080;
+    position: absolute;
+    top: 50%;
+    left: 11.5%;
   }
   .solar-system-container .haumea-ring {
     stroke: #808080;
+    position: relative;
+    top: 50%;
+    left: 98%;
   }
   .solar-system-container #pluto {
     fill: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 83%;
   }
   .solar-system-container #orcus {
     fill: #424242;
+    position: absolute;
+    top: 50%;
+    left: 17%;
   }
   .solar-system-container #neptune {
     fill: #414bb2;
+    position: absolute;
+    top: 50%;
+    left: 79%;
   }
   .solar-system-container #uranus {
     fill: #ace5e8;
+    position: absolute;
+    top: 50%;
+    left: 21%;
   }
   .solar-system-container #saturn {
     fill: #fac711;
+    position: absolute;
+    top: 50%;
+    left: 72%;
   }
   .solar-system-container .saturn-ring {
     stroke: #fac711;
   }
-  .solar-system-container .saturn {
-    transform: rotate(45deg);
-  }
   .solar-system-container #jupiter {
     fill: #aa5f90;
+    position: absolute;
+    top: 50%;
+    left: 29%;
   }
   .solar-system-container #ceres {
     fill: #808080;
+    position: absolute;
+    top: 50%;
+    left: 67%;
   }
   .solar-system-container #mars {
     fill: #f45642;
-    position: relative;
+    position: absolute;
     top: 50%;
-    left: 80%;
+    left: 33%;
   }
   .solar-system-container #earth {
-    position: relative;
+    position: absolute;
     fill: #2d9bf0;
     top: 50%;
-    left: 70%;
+    left: 63%;
   }
   .solar-system-container #venus {
     fill: #e6e6e6;
+    position: absolute;
+    top: 50%;
+    left: 37%;
   }
   .solar-system-container #mercury {
     fill: #b4badf;
+    position: absolute;
+    top: 50%;
+    left: 59%;
   }
 
-  .shown-on-desktop {
+  .planet-card {
     position: absolute;
-    top: 80%;
-    height: 500px;
+    top: 50%;
+    width: 300px;
+  }
+  .planet-card h2 {
+    font-size: 3rem;
+  }
+  .planet-card h3 {
+    font-size: 2rem;
   }
 }
 
