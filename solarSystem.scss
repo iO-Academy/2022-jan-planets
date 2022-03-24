@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 600px) {
   body {
-    background-image: url("cosmos-1853491_1920.jpg");
+    background-image: linear-gradient(to bottom, #00000050, #00000050), url('cosmos-1853491_1920.jpg');
   }
 
   .hidden-on-desktop {
@@ -29,10 +29,6 @@
 
   .mobile {
     display: none;
-  }
-
-  main {
-    padding: 20px;
   }
 
   .solar-system-container {
@@ -145,12 +141,19 @@
       width: 5%;
       left: 59%;
     }
-
+  }
     .planet-card {
       position: absolute;
       bottom: 0;
       left: 20px;
-      width: 200px;
-    }
+      width: 10%;
+      border: 2px #ffffff solid;
+      border-radius: 10px;
+ }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }
