@@ -1,0 +1,127 @@
+.solar-system-container {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url("cosmos-1853491_1920.jpg");
+  }
+
+  .hidden-on-desktop {
+    display: none;
+  }
+
+  .title-image-container {
+    position: absolute;
+    width: 95%;
+    z-index: 1;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .title-image-container #title-image {
+    padding: 0;
+    width: 50%;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .solar-system-container {
+    display: block;
+    width: 100%;
+    height: 95vh;
+    position: relative;
+  }
+  .solar-system-container .orbit-svg {
+    position: absolute;
+  }
+  .solar-system-container .orbit {
+    stroke: #595858;
+  }
+  .solar-system-container .desktop {
+    width: 12%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  }
+  .solar-system-container #senda {
+    fill: #e6e6e6;
+  }
+  .solar-system-container #eris {
+    fill: #6e2e2e;
+  }
+  .solar-system-container #gonggong {
+    fill: #956986;
+  }
+  .solar-system-container #makemake {
+    fill: #6e2e2e;
+  }
+  .solar-system-container #quaoar {
+    fill: #573232;
+  }
+  .solar-system-container #haumea {
+    fill: #808080;
+  }
+  .solar-system-container .haumea-ring {
+    stroke: #808080;
+  }
+  .solar-system-container #pluto {
+    fill: #ffffff;
+  }
+  .solar-system-container #orcus {
+    fill: #424242;
+  }
+  .solar-system-container #neptune {
+    fill: #414bb2;
+  }
+  .solar-system-container #uranus {
+    fill: #ace5e8;
+  }
+  .solar-system-container #saturn {
+    fill: #fac711;
+  }
+  .solar-system-container .saturn-ring {
+    stroke: #fac711;
+  }
+  .solar-system-container .saturn {
+    transform: rotate(45deg);
+  }
+  .solar-system-container #jupiter {
+    fill: #aa5f90;
+  }
+  .solar-system-container #ceres {
+    fill: #808080;
+  }
+  .solar-system-container #mars {
+    fill: #f45642;
+    position: relative;
+    top: 50%;
+    left: 80%;
+  }
+  .solar-system-container #earth {
+    position: relative;
+    fill: #2d9bf0;
+    top: 50%;
+    left: 70%;
+  }
+  .solar-system-container #venus {
+    fill: #e6e6e6;
+  }
+  .solar-system-container #mercury {
+    fill: #b4badf;
+  }
+
+  .shown-on-desktop {
+    position: absolute;
+    top: 80%;
+    height: 500px;
+  }
+}
+
+/*# sourceMappingURL=solarSystem.css.map */
